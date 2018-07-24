@@ -1,0 +1,10 @@
+<div class='popover'>
+  <div class='slds-form-element'>
+      <div class='slds-form-element__icon slds-align-middle slds-p-top_x-small'>
+          <a href='javascript:void(0)' class='slds-text-body_small' (click)='showToolTip = !showToolTip'>{{ buttonText }}</a>
+      </div>
+  </div>
+  <div class='slds-popover popover__placement slds-popover_tooltip slds-nubbin_top-right' role='tooltip' [ngClass]='{"slds-fall-into-ground" : showToolTip === false}'>
+      <div class='slds-popover__body'>{{ bodyText }}</div>
+  </div>
+</div>

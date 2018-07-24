@@ -1,0 +1,10 @@
+@import '~variables.scss';
+
+.slds-input {
+    @include crossBrowser(box-shadow, $input-shadow);
+    border: $input-border;
+}
+
+.slds-input[disabled] {
+    background: transparent;
+}

@@ -1,0 +1,17 @@
+@import '~variables.scss';
+
+.popover {
+    position : relative;
+    &__placement {
+        position : absolute; 
+        top : 40px;
+        right : 7px;
+    }
+    .slds-form-element {
+        text-align : right;
+        a {
+            @include capitalize();
+            text-decoration : underline;
+        }
+    }
+}

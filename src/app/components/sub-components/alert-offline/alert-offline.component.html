@@ -1,0 +1,16 @@
+<div class='slds-notify slds-notify_alert slds-theme_shade slds-theme_offline' role='alert'>
+  <span class='slds-assistive-text'>The currency rates are unavailable. Please try again.</span>
+  <span class='slds-icon_container slds-icon-utility-offline' title='Description of icon when needed'>
+    <svg class='slds-icon slds-icon_x-small' aria-hidden='true'>
+      <use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='/assets/icons/utility-sprite/svg/symbols.svg#offline' />
+    </svg>
+  </span>
+  <h2>The currency rates are unavailable. Please try again.</h2>
+  <button class='slds-button' (click)='refresh.emit(true)'>
+    <span class='slds-icon_container slds-icon-utility-offline' title='Description of icon when needed'>
+      <svg class='slds-icon slds-icon_x-small' aria-hidden='true'>
+        <use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='/assets/icons/utility-sprite/svg/symbols.svg#refresh' />
+      </svg>
+    </span>
+  </button>
+</div>

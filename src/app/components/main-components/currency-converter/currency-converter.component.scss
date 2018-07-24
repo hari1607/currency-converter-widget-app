@@ -1,0 +1,23 @@
+@import '~variables.scss';
+
+.currency-converter {
+    max-width : 295px;
+    border : 1px solid $black;
+    background-color : $white;
+}
+
+.slds-text-heading_small {
+    color : $black;
+    &::first-letter {
+        @include capitalize();
+    }
+}
+
+.align_bottom {
+    justify-content : flex-end;
+    align-items : flex-end;
+}
+
+alert-offline {
+    display: block;
+}

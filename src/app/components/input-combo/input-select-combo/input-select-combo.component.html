@@ -1,0 +1,9 @@
+<label class='slds-form-element__label slds-text-body_small slds-p-top_x-small'>{{ label }}</label>
+<div class='slds-grid align_bottom'>
+    <div class='slds-size_5-of-8'>
+        <numeric-input [value]='value' (valueChange)='valueChange.emit($event)' [disabled]='disableInput'></numeric-input>
+    </div>
+    <div class='slds-size_3-of-8 slds-p-left_x-small'>
+        <select-option (optionChange)='optionChange.emit($event)' [options]='options'></select-option>
+    </div>
+</div>

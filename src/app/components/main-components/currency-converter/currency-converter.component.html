@@ -1,0 +1,25 @@
+<div class='slds-p-around_small slds-m-around_xx-small currency-converter'>
+
+    <p class='slds-text-heading_small'>Currency converter</p>
+
+    <input-select-combo
+        label='Type in amount and select currency:'
+        (valueChange)='amountValueChange($event)'
+        (optionChange)='amountCurrencyChange($event)' 
+        [options]='amountCurrencies'>
+    </input-select-combo>
+
+    <input-select-combo
+        label='Converted amount:'
+        [value]='resultValue' 
+        disabled='true'
+        (optionChange)='resultCurrencyChange($event)' 
+        [options]='resultCurrencies'>
+    </input-select-combo>
+
+    <alert-offline class='slds-p-top_small' *ngIf='apiError' (refresh)='latestCurrencyInformation(amountCurrency)'></alert-offline>
+
+    <tooltip buttonText='Disclaimer' bodyText='
+Exchange rates are determined in the foreign exchange market, which is open to a wide range of different types of buyers and sellers, and where currency trading is continuous: 24 hours a day except weekends.'></tooltip>
+
+</div>

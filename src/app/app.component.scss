@@ -1,0 +1,11 @@
+@import '~variables.scss';
+
+.wrapper {
+    display: flex; 
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.slds-button {
+    border: 1px solid $black;
+}

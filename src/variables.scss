@@ -1,0 +1,26 @@
+/* Colors */
+$black : #000000;
+$white : #FFFFFF;
+$grey-border : #A4A4A4;
+
+/* Input Presets */
+$input-border : 1px solid $grey-border;
+$input-shadow : inset 0px 1px 3px $grey-border;
+$input-gradient : linear-gradient(0deg, #D6D6D6 0%, #EFEFEF 100%);
+
+/**
+ * Cross Browser Compatability Mixin
+ * @param {$property} css property
+ * @param {$val} css value
+ */
+@mixin crossBrowser($property, $value) {
+    -webkit-#{$property} : $value; /* Chrome10+,Safari5.1+ */
+    -moz-#{$property} : $value; /* FF3.6+ */
+    -ms-#{$property} : $value; /* IE 10+ */
+    #{$property} : $value;/* W3C */
+}
+
+/* Capitalize First Letter */
+@mixin capitalize() {
+    text-transform : capitalize;
+}

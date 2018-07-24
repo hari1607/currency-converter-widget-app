@@ -1,0 +1,13 @@
+<div class='slds-form-element'>
+  <div class='slds-form-element__control'>
+    <input class='slds-input' 
+      type='tel' 
+      [disabled]='disabled' 
+      (ngModelChange)='updateAmount($event)' 
+      [ngModel]='value' 
+      placeholder='0.00'
+      currencyMask
+      clearIfNotMatch='false'
+      [options]='config.currencyConverter.currencyMaskOptions'/>
+  </div>
+</div>

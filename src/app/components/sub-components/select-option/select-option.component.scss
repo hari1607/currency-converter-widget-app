@@ -1,0 +1,5 @@
+@import '~variables.scss';
+
+.slds-select {
+    @include crossBrowser(background, $input-gradient);
+}
